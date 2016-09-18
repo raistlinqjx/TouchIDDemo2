@@ -13,6 +13,9 @@
 		18B1FEC01D8695B00015B7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B1FEBE1D8695B00015B7AB /* Main.storyboard */; };
 		18B1FEC21D8695B00015B7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1FEC11D8695B00015B7AB /* Assets.xcassets */; };
 		18B1FEC51D8695B00015B7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B1FEC31D8695B00015B7AB /* LaunchScreen.storyboard */; };
+		18B1FECD1D8697110015B7AB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B1FECC1D8697110015B7AB /* LocalAuthentication.framework */; };
+		18B1FED11D8699EA0015B7AB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1FECF1D8699EA0015B7AB /* DetailViewController.m */; };
+		18B1FED21D8699EA0015B7AB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B1FED01D8699EA0015B7AB /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		18B1FEC11D8695B00015B7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B1FEC41D8695B00015B7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B1FEC61D8695B00015B7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B1FECC1D8697110015B7AB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		18B1FECE1D8699EA0015B7AB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		18B1FECF1D8699EA0015B7AB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		18B1FED01D8699EA0015B7AB /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B1FECD1D8697110015B7AB /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 		18B1FEA91D8695AF0015B7AB = {
 			isa = PBXGroup;
 			children = (
+				18B1FECC1D8697110015B7AB /* LocalAuthentication.framework */,
 				18B1FEB41D8695B00015B7AB /* TouchIDDemo2 */,
 				18B1FEB31D8695AF0015B7AB /* Products */,
 			);
@@ -62,6 +71,9 @@
 				18B1FEB91D8695B00015B7AB /* AppDelegate.m */,
 				18B1FEBB1D8695B00015B7AB /* ViewController.h */,
 				18B1FEBC1D8695B00015B7AB /* ViewController.m */,
+				18B1FECE1D8699EA0015B7AB /* DetailViewController.h */,
+				18B1FECF1D8699EA0015B7AB /* DetailViewController.m */,
+				18B1FED01D8699EA0015B7AB /* DetailViewController.xib */,
 				18B1FEBE1D8695B00015B7AB /* Main.storyboard */,
 				18B1FEC11D8695B00015B7AB /* Assets.xcassets */,
 				18B1FEC31D8695B00015B7AB /* LaunchScreen.storyboard */,
@@ -139,6 +151,7 @@
 				18B1FEC51D8695B00015B7AB /* LaunchScreen.storyboard in Resources */,
 				18B1FEC21D8695B00015B7AB /* Assets.xcassets in Resources */,
 				18B1FEC01D8695B00015B7AB /* Main.storyboard in Resources */,
+				18B1FED21D8699EA0015B7AB /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +165,7 @@
 				18B1FEBD1D8695B00015B7AB /* ViewController.m in Sources */,
 				18B1FEBA1D8695B00015B7AB /* AppDelegate.m in Sources */,
 				18B1FEB71D8695B00015B7AB /* main.m in Sources */,
+				18B1FED11D8699EA0015B7AB /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchIDDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zfsoft.TouchIDDemo2;
@@ -274,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchIDDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zfsoft.TouchIDDemo2;
